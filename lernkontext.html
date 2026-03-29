@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="simple.css" rel="stylesheet">
+    <title>KI als Chance beim Lernen nach Corona</title>
+  </head>
+  <body>
+  <header>
+    <h1>KI als Chance beim Lernen nach Corona</h1>
+    <p>Begleitende Materialien zur Beiratssitzung Tab Mint am 30. März 2026</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="nutzung.html">Lernförderliche Nutzung</a></li>
+        <li><a href="vertiefung.html">Vertiefung</a></li>
+        <li><a href="ergebnisse.html">Ergebnisse</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Mit Lernkontext-Dateien arbeiten</h2>
+
+    <h3>Was ist eine Lernkontext-Datei?</h3>
+
+    <p>Die Idee einer Lernkontext-Datei beruht auf dem Konzept eines „Personal Context Manager". KI-Sprachmodelle haben von sich aus keine Informationen zum Kontext der Nutzenden. Mit einer Lernkontext-Datei -- einer Datei, die mit dem KI-Sprachmodell geteilt wird -- kann dieser Kontext gleich zu Beginn des Chats eingeführt werden. Das führt zu passenderen und zielgerichteteren Ausgaben.</p>
+
+    <p>Übertragen auf das Lernen bedeutet das: Ich mache meinen Lernkontext zu Beginn eines Chats deutlich. Ich kann inhaltliche Herausforderungen teilen, beschreiben, was ich bereits gelernt habe und woran ich anschließen will. Vor allem kann ich festlegen, welche Lernwerkzeuge ich nutze, welche Form von Feedback für mich besonders hilfreich ist und wie die Chats für mich am besten funktionieren.</p>
+
+    <p>Das Lernen funktioniert dadurch besser -- erstens, weil ich dem KI-Modell klare Angaben mache, und zweitens, weil ich vorab über mein eigenes Lernen reflektiere und so auf einer Metaebene vor allem auch das Lernen selbst lerne.</p>
+
+    <h3>Warum ist das besonders in der beruflichen Bildung hilfreich?</h3>
+
+    <p>Gerade in der beruflichen Bildung sind Lernkontexte sehr unterschiedlich: Auszubildende bringen verschiedene Vorkenntnisse mit, befinden sich in unterschiedlichen Ausbildungsjahren und Betrieben und haben ganz individuelle Lernherausforderungen. Eine Lernkontext-Datei ermöglicht es, diese individuellen Voraussetzungen systematisch einzubringen, sodass das KI-Sprachmodell als personalisierter Lernbegleiter fungieren kann.</p>
+
+    <p>Konkret kann eine solche Datei zum Beispiel enthalten: den Ausbildungsberuf und das aktuelle Ausbildungsjahr, spezifische fachliche Herausforderungen (etwa bei der Prüfungsvorbereitung), bisherige Kenntnisse und Fähigkeiten, den bevorzugten Lernstil sowie die verfügbare Lernzeit. So wird aus einem allgemeinen KI-Chatbot eine individuell zugeschnittene Lernunterstützung.</p>
+
+    <h3>Vorlage: Mein persönlicher Lernbegleiter</h3>
+
+    <p>Mit der folgenden Vorlage kannst du dir eine Lernkontext-Datei für eine aktuelle, möglichst konkrete Lernherausforderung gestalten. Fülle die ...-Stellen aus und passe die Vorgaben an, wenn dir anderes besser erscheint.</p>
+
+    <h4>Datei zum Ausfüllen</h4>
+
+    <textarea id="contextFile" rows="30" style="width:100%;">
+Regel: Beachte die folgenden Aspekte, es sei denn ich gebe andere Anweisungen.
+
+Deine Rolle: Begleitung und Unterstützung bei der Bearbeitung einer von mir angegebenen Lernherausforderung.
+
+## Meine Ausbildung / mein Kontext
+Beruf / Tätigkeit: ...
+Ausbildungsjahr / Erfahrung: ...
+Betrieb / Einrichtung: ...
+
+## Meine aktuelle Lernherausforderung
+Lernherausforderung: ...
+Was möchte ich lernen: ...
+Bis wann: ...
+Woran erkenne ich Erfolg: ...
+
+## Was ich schon kann
+Bisherige Erfahrungen und Kenntnisse: ...
+Bisherige Schwierigkeiten: ...
+Woran ich anknüpfen kann: ...
+
+## Wie ich am besten lerne
+Bevorzugter Lernstil (z.B. Schritt für Schritt, Learning by Doing, mit Beispielen, durch Grafiken, eigenes Tempo): ...
+Bevorzugter Erklärstil: ...
+
+## So möchte ich Feedback
+Umgang mit Fehlern: Motivierend und unterstützend, aber auch herausfordernd
+Hilfreiche Formate (z.B. Checklisten, Übungsaufgaben, Eselsbrücken): ...
+
+## Meine Lernzeit
+Wann und wie viel Zeit habe ich: ...
+
+## Zugang zu Tools und Hilfe
+Zugang zu Tools: ...
+Weitere Hilfemöglichkeiten (z.B. Ausbilder*innen, Kolleg*innen, Fachbücher, Wissensbasis): ...
+
+## Sprache und Tonalität
+Sprache: Deutsch
+Tonalität: Per Du, Ansprache mit ..., kurzer und prägnanter Output
+
+## Vorgehen
+Erfrage meinen aktuellen Stand mit meiner Wissenslücke, kläre dann erst das grundsätzliche Vorgehen und begleite mich dann Schritt für Schritt. Erinnere mich am Ende daran, diesen Lernkontext zu aktualisieren.
+
+## KI-Limitationen
+Ich möchte die Limitationen von KI-Sprachmodellen kontinuierlich reflektieren. Mache transparent, wenn du keine eindeutige Antwort generieren kannst. Fordere mich grundsätzlich zur Überprüfung von generiertem Output auf.
+
+## Besondere Situationen
+z.B. Prüfungsvorbereitung, wichtige Ziele: ...
+
+Metadaten: Version 1.0, Datum ...
+    </textarea>
+
+    <button onclick="copyText()">Kopiere in die Zwischenablage</button>
+
+    <h3>Nutze deine erstellte Lernkontext-Datei!</h3>
+
+    <p>Wenn du die Datei fertiggestellt hast, kannst du sie mit einem KI-Sprachmodell teilen und dich in Interaktion begeben. Es ist möglich, den Text direkt in ein Chatfenster einzufügen oder die Datei hochzuladen. Offen nutzbare KI-Sprachmodelle findest du via <a href="https://duck.ai">duck.ai</a>.</p>
+
+    <p>Falls die Interaktion nicht so läuft, wie es hilfreich wäre: Passe die Vorlage an! Die Lernkontext-Datei ist ein lebendes Dokument, das mit deinem Lernprozess wächst.</p>
+
+    <h3>Reflektiere, wie die Arbeit geklappt hat!</h3>
+
+    <p>Fast noch wichtiger als die Bearbeitung der konkreten Lernherausforderung ist die Reflexion: Wie hat die Arbeit mit der Lernkontext-Datei geklappt? Tausche dich mit Kolleg*innen dazu aus!</p>
+
+    <p>Eine ausführliche Reflexion findest du <a href="https://ebildungslabor.de/blog/lernkontext-dateien-bei-der-nutzung-von-ki-sprachmodellen/">in diesem Blogbeitrag im eBildungslabor</a>. Weitere Anregungen zur Nutzung von Lernkontext-Dateien speziell in der beruflichen Bildung gibt es <a href="https://www.ulrichivens.de/2025/09/20/lernkontext-in-ki-projekten-personalisiertes-lernen-fuer-azubis/">bei Ulrich Ivens</a>.</p>
+
+    <p><a href="nutzung.html">Zurück zur Übersicht</a></p>
+  </main>
+
+  <footer>
+    <p>Erstellt von Nele Hirsch (<a href="https://ebildungslabor.de">eBildungslabor</a>) für die Beiratssitzung des Tab Mint am 30. März 2026.</p>
+  </footer>
+
+  <script>
+    function copyText() {
+        const textArea = document.getElementById("contextFile");
+        textArea.select();
+        document.execCommand("copy");
+        alert("Text wurde in die Zwischenablage kopiert.");
+    }
+  </script>
+  </body>
+</html>

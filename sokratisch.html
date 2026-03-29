@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="simple.css" rel="stylesheet">
+    <title>KI als Chance beim Lernen nach Corona</title>
+  </head>
+  <body>
+  <header>
+    <h1>KI als Chance beim Lernen nach Corona</h1>
+    <p>Begleitende Materialien zur Beiratssitzung Tab Mint am 30. März 2026</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="nutzung.html">Lernförderliche Nutzung</a></li>
+        <li><a href="vertiefung.html">Vertiefung</a></li>
+        <li><a href="ergebnisse.html">Ergebnisse</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Sokratischer Dialog</h2>
+    <p>KI-Sprachmodelle können nicht nur so genutzt werden, dass sie schnell eine fertige Antwort generieren, sondern dass sie zum vertieften Nachdenken herausfordern. Ein sokratischer Dialog bedeutet: Das KI-Modell gibt keine Antworten, sondern stellt gezielte Rückfragen, die dabei helfen, eigene Gedanken zu entwickeln und ein Thema tief zu durchdringen.</p>
+    <p>Gib ein Thema ein, das du gern tiefer durchdenken möchtest. Zum Beispiel: <em>Nachhaltigkeit in der beruflichen Praxis</em>.</p>
+    <form id="dialogForm">
+      <label for="dialogThema">Welches Thema möchtest du erkunden?</label><br>
+      <input type="text" id="dialogThema" name="dialogThema" required style="width: 100%;">
+      <br>
+      <button type="submit">Prompt erstellen</button>
+    </form>
+
+    <hr>
+
+    <h3>Weitere ähnliche Möglichkeiten</h3>
+
+    <h4>Kopfstand-Methode</h4>
+    <p>Die Kopfstand-Methode ist eine Kreativitätstechnik: Anstatt direkt nach Lösungen zu suchen, überlegt man zunächst, was das Dümmstmögliche wäre, das man tun könnte. Danach fällt es erfahrungsgemäß viel leichter, auf neue und hilfreiche Ideen zu kommen.</p>
+    <p>Gib eine Herausforderung als Frage ein. Zum Beispiel: <em>Wie können wir Auszubildende besser bei Prüfungsvorbereitungen unterstützen?</em></p>
+    <form id="kopfstandForm">
+      <label for="kopfstandFrage">Deine Veränderungsfrage:</label><br>
+      <input type="text" id="kopfstandFrage" name="kopfstandFrage" required style="width: 100%;">
+      <br>
+      <button type="submit">Prompt erstellen</button>
+    </form>
+
+    <h4>Brainstorming-Spiel</h4>
+    <p>Beim Brainstorming-Spiel geht es darum, mit dem KI-Sprachmodell in ein kreatives PingPong zu kommen: Du nennst eine Idee, dann die KI, dann du wieder. So entstehen abwechselnd neue Perspektiven auf eine Herausforderung.</p>
+    <p>Gib eine Frage ein, zu der du neue Ideen entwickeln willst. Zum Beispiel: <em>Wie kann unser Betrieb digitale Kompetenzen stärken?</em></p>
+    <form id="spielForm">
+      <label for="spielFrage">Deine „Wie kann ich..."-Frage:</label><br>
+      <input type="text" id="spielFrage" name="spielFrage" required style="width: 100%;">
+      <br>
+      <button type="submit">Prompt erstellen</button>
+    </form>
+
+    <p><a href="nutzung.html">Zurück zur Übersicht</a></p>
+  </main>
+  <footer>
+    <p>Erstellt von Nele Hirsch (<a href="https://ebildungslabor.de">eBildungslabor</a>) für die Beiratssitzung des Tab Mint am 30. März 2026.</p>
+  </footer>
+
+  <script>
+    document.getElementById('dialogForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const thema = document.getElementById('dialogThema').value;
+      window.location.href = '1.html?thema=' + encodeURIComponent(thema);
+    });
+
+    document.getElementById('kopfstandForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const frage = document.getElementById('kopfstandFrage').value;
+      window.location.href = '2.html?frage=' + encodeURIComponent(frage);
+    });
+
+    document.getElementById('spielForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const frage = document.getElementById('spielFrage').value;
+      window.location.href = '3.html?frage=' + encodeURIComponent(frage);
+    });
+  </script>
+  </body>
+</html>
